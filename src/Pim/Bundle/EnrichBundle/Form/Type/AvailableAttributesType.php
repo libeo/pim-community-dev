@@ -78,8 +78,9 @@ class AvailableAttributesType extends AbstractType
     {
         $resolver->setDefaults(
             array(
-                'data_class' => 'Pim\Bundle\CatalogBundle\Model\AvailableAttributes',
-                'attributes' => array(),
+                'data_class'   => 'Pim\Bundle\CatalogBundle\Model\AvailableAttributes',
+                'attributes'   => array(),
+                'willBeEdited' => false
             )
         );
 
