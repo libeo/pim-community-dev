@@ -107,6 +107,8 @@ class ProductQueryFactory implements ProductQueryFactoryInterface
             [
                 'repository_method' => 'createQueryBuilder',
                 'repository_parameters' => 'o',
+                'default_locale' => '',
+                'default_scope' => ''
             ]
         );
     }
