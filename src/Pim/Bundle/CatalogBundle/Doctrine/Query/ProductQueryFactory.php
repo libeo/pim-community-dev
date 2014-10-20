@@ -92,19 +92,15 @@ class ProductQueryFactory implements ProductQueryFactoryInterface
      */
     protected function configureOptions(OptionsResolverInterface $resolver)
     {
-        $resolver->setRequired(
-            [
-                'default_locale',
-                'default_scope'
-            ]
-        );
-
         $resolver->setOptional(
             [
                 'repository_method',
                 'repository_parameters',
                 'currentGroup',
-                'product'
+                'product',
+                // TODO : should be required ?
+                'default_locale',
+                'default_scope'
             ]
         );
         $resolver->setDefaults(
