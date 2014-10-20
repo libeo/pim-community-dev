@@ -462,7 +462,7 @@ class ProductRepository extends EntityRepository implements
         $qb->leftJoin('AttributeGroup.translations', 'AGroupTranslations');
         $qb->addSelect('AGroupTranslations');
         $qb->andWhere(
-            $qb->expr()->equals($rootAlias.'.id', $id)
+            $qb->expr()->eq($rootAlias.'.id', $id)
         );
 
         return $qb
