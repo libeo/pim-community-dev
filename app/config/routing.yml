@@ -58,3 +58,6 @@ _apy_jsformvalidation:
 pim_customentity:
     prefix: /enrich
     resource: "@PimCustomEntityBundle/Resources/config/routing.yml"
+
+libeo_pdf_generator:
+    resource: "@LibeoPdfGeneratorBundle/Resources/config/routing.yml"

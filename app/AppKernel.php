@@ -32,7 +32,8 @@ class AppKernel extends Kernel
             $this->getOroDependencies(),
             $this->getOroBundles(),
             $this->getPimDependenciesBundles(),
-            $this->getPimBundles()
+            $this->getPimBundles(),
+            $this->getLibeoBundles()
         );
 
         return $bundles;
@@ -204,4 +205,18 @@ class AppKernel extends Kernel
             // new Oro\Bundle\WorkflowBundle\OroWorkflowBundle(),
         ];
     }
+
+    /**
+     * Libeo bundles
+     *
+     * @return array
+     */
+    protected function getLibeoBundles()
+    {
+        return [
+            // Pim overriden bundles
+            new Libeo\Bundle\PdfGeneratorBundle\LibeoPdfGeneratorBundle()
+        ];
+    }
+
 }
