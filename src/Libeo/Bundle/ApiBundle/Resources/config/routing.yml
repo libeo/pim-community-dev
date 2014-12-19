@@ -1,0 +1,15 @@
+libeo_api_v1_products:
+    resource: '@LibeoApiBundle/Controller/ProductController.php'
+    type:   rest
+    prefix: api/v1/
+
+libeo_api_v1_categories:
+    resource: '@LibeoApiBundle/Controller/CategoryController.php'
+    type:   rest
+    prefix: api/v1/
+
+libeo_api_v1_families:
+    resource: '@LibeoApiBundle/Controller/FamilyController.php'
+    type:   rest
+    prefix: api/v1/
+

@@ -214,7 +214,8 @@ class AppKernel extends Kernel
     {
         return [
             // Pim overriden bundles
-            new Libeo\Bundle\PdfGeneratorBundle\LibeoPdfGeneratorBundle()
+            new Libeo\Bundle\PdfGeneratorBundle\LibeoPdfGeneratorBundle(),
+            new Libeo\Bundle\ApiBundle\LibeoApiBundle(),
         ];
     }
 
