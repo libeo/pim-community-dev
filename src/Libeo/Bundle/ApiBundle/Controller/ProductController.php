@@ -20,7 +20,14 @@ class ProductController extends FOSRestController
         $repo = $manager->getProductRepository();
         $products = $repo->findAll();
 
-        return new Response($products);
+        $res = array();
+        foreach($products as $p)
+        {
+            $res[] = $p->getValues();
+        }
+
+        //$res = json_encode($res);
+        return $res;
     }
 
     public function getAction(Request $request, $sku)
