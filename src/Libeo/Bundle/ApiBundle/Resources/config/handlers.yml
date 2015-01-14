@@ -1,0 +1,8 @@
+parameters:
+    libeo_api.handler.product.class: Pim\Bundle\WebServiceBundle\Handler\Rest\ProductHandler
+
+services:
+    libeo_api.handler.rest.product:
+        class: %libeo_api.handler.product.class%
+        arguments:
+            - '@pim_webservice.serializer'

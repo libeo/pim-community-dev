@@ -24,5 +24,8 @@ class LibeoApiExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $loader->load('serializer/serializer.yml');
+        $loader->load('serializer/structured.yml');
     }
 }

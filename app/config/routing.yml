@@ -64,3 +64,5 @@ libeo_pdf_generator:
 
 libeo_api_v1:
     resource: "@LibeoApiBundle/Resources/config/routing.yml"
+    prefix: api/v1
+    type: rest

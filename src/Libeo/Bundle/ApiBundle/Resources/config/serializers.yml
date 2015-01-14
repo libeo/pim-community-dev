@@ -1,0 +1,7 @@
+#parameters:
+#    libeo_api.serializer.class:                 Symfony\Component\Serializer\Serializer
+#    libeo_api.serializer.encoder.json.class:    Symfony\Component\Serializer\Encoder\JsonEncoder
+#
+#services:
+#    libeo_api.serializer:
+#        class: %libeo_api.serializer.class%

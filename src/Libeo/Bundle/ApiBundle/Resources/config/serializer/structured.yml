@@ -1,12 +1,12 @@
 parameters:
-    libeo_api.serializer.class: Symfony\Component\Serializer\Serializer
+    libeo_api.serializer.normalizer.category.class: Libeo\Bundle\ApiBundle\Normalizer\LibeoApiCategoryNormalizer
 
 services:
-    libeo_api.serializer:
-        class:  %libeo_api.serializer.class%
+    # Normalizers
 
-    libeo_api.serializer.encoder.json:
-        public: false
-        class: %libeo_serializer.encoder.json.class%
+    pim_webservice.serializer.normalizer.category:
+        class: %libeo_api.serializer.normalizer.category.class%
         tags:
-            - { name: libeo_api.serializer.encoder, priority: 90 }
+            - { name: pim_webservice.serializer.normalizer, priority: 90 }
+        arguments:
+            - '@pim_serializer.normalizer.label_translation'

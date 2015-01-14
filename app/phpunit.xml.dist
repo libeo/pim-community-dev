@@ -36,6 +36,9 @@
         <testsuite name="PIM_Performance_Test">
             <directory suffix="Perf.php">../src/Pim/Bundle/*Bundle/Tests/Performance</directory>
         </testsuite>
+        <testsuite name="LIBEO_Tests">
+            <directory suffix="Test.php">../src/Libeo/Bundle/*Bundle/Tests/Controller</directory>
+        </testsuite>
 
         <!-- Jenkins test suite -->
         <testsuite name="Jenkins_PIM_Test">

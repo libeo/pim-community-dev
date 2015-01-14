@@ -21,6 +21,8 @@ class FamilyController extends FOSRestController
 
     public function cgetAction(Request $request)
     {
-        return new Response("all families");
+        $manager = $this->get('pim_catalog.manager.family');
+        $choices = $manager->getChoices();
+        return new Response(json_encode($choices));
     }
 }

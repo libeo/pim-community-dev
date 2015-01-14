@@ -1,15 +1,28 @@
+libeo_api_v1_locales:
+    resource: '@LibeoApiBundle/Controller/LocaleController.php'
+    type: rest
+    name_prefix: libeo_api_
+
 libeo_api_v1_products:
     resource: '@LibeoApiBundle/Controller/ProductController.php'
     type:   rest
-    prefix: api/v1/
+    name_prefix: libeo_api_
+#    parent: libeo_api_v1_locales
+#libeo_api_v1_products:
+#    path: /{locale}/products
+#    defaults: { _controller: LibeoApiBundle:Product:cget }
+#
+#libeo_api_v1_product:
+#    path: /{locale}/products/{sku}
+#    defaults: { _controller: LibeoApiBundle:Product:get }
+
 
 libeo_api_v1_categories:
     resource: '@LibeoApiBundle/Controller/CategoryController.php'
     type:   rest
-    prefix: api/v1/
+    name_prefix: libeo_api_
 
 libeo_api_v1_families:
     resource: '@LibeoApiBundle/Controller/FamilyController.php'
     type:   rest
-    prefix: api/v1/
-
+    name_prefix: libeo_api_
