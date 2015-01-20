@@ -34,7 +34,7 @@ security:
             security:                       false
 
         wsse_secured:
-            pattern:                        ^/api/(rest|soap).*
+            pattern:                        ^/api/(rest|soap|v1).*
             wsse:
                 lifetime:                   3600
                 realm:                      "Secured API"
